@@ -1,18 +1,30 @@
 <template>
-  <div>
-    <h3>首页</h3>
+  <div id="name">
+    <nav-bar class="home-nav">
+      <template v-slot:center>
+        <div>购物街</div>
+      </template>
+    </nav-bar>
   </div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {}
-    },
-    created() {},
-    methods: {}
-  }
+import NavBar from "components/common/navbar/NavBar";
+export default {
+  data() {
+    return {};
+  },
+  created() {},
+  components: {
+    NavBar,
+  },
+  methods: {},
+};
 </script>
 
 <style scoped>
+.home-nav {
+  background-color: var(--color-tint);
+  color: #fff;
+}
 </style>
