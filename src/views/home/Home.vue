@@ -105,8 +105,8 @@
             this.currentType = 'sell'
             break
         }
-        this.$refs.tabControl1.currentIndex = index;
-        this.$refs.tabControl2.currentIndex = index;
+        this.$refs.tabControl1.currentIndex = index
+        this.$refs.tabControl2.currentIndex = index
       },
       backTopClick() {
         this.$refs.scroll.scrollTo(0, 0)
@@ -123,9 +123,7 @@
       },
       swiperImgLoad() {
         // 获取tabControl的offsetTop
-        console.log(this.$refs.homeNav.$el.offsetHeight);
         this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop - this.$refs.homeNav.$el.offsetHeight
-        console.log(this.tabOffsetTop);
       },
 
       /**
